@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Portfolio from "./Portfolio"
 
 export default function Wrapper() {
   const [show, setShow] = useState(false)
@@ -32,7 +33,7 @@ export default function Wrapper() {
           <div className="heading-line"></div>
         </section>
       </div>
-      <div className="portfolio"></div>
+      <Portfolio />
     </div>
   )
 }

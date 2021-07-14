@@ -81,22 +81,29 @@ a
 				left: 0
 				top: 50%
 				transform: translateX(-50%)
+				transition: background-color .3s .1s ease-in-out
 				&:before
 					@extend %pseudo-block
-					top: -10px
+					// top: -10px
+					transform: translateY(10px)
+					transition: transform .3s .1s ease-in-out
+
 				&:after
 					@extend %pseudo-block
-					top: 10px
+					transform: translateY(-10px)
+					transition: transform .3s .1s ease-in-out
+
+					// top: 10px
 	.hamburger-active
 		.hamburger-box
 			.hamburger-inner
+				transition: transform .3s .1s ease-in-out
 				background-color: transparent
+
 				&:before
-					transform: translateY(10px) rotate(45deg)
-					transition: transform .3s .1s ease-in-out
+					transform: translateY(0px) rotate(45deg)
 				&:after
-					transition: transform .3s .1s ease-in-out
-					transform: translateY(-10px) rotate(-45deg)
+					transform: translateY(0px) rotate(-45deg)
 			
 // **************END-HAMBURGER-MENU************** // 
 .menu-list
@@ -170,6 +177,7 @@ a
 			text-align: center
 			font-size: 1rem
 			cursor: pointer
+			display: block
 			width: 9rem
 			border: 2px solid #fff
 			padding: 0.3rem 1rem
@@ -179,11 +187,10 @@ a
 				color: $primary-background
 		.about
 			height: 0
-			width: auto
 			transition: all 0.5s
 		.about__open
 			height: 53rem
-			transition: all .1s
+			transition: all .5s
 			padding-top: 1rem
 			.about__about-text
 				margin-bottom: 1rem
@@ -191,7 +198,61 @@ a
 				font-weight: 300
 				a
 					font-weight: bold
-					transition: all 0.2s
+					transition: all 0.5s
 
 
+			// **************PORTFOLIO************** // 
+.portfolio
+	padding: 1rem 0
+	.portfolio__entry
+		margin-bottom: 2rem
+		border-bottom: 1px solid #434343
+		.entry__img-container
+			margin-bottom: 0rem
+			border: 3px solid #fff
+			border-bottom: none
+			position: relative
+			overflow: hidden
+			.hover-img
+				position: absolute
+				top: 100%
+				transition: all 0.5s
+		.entry__right-container
+			.entry__link-container
+				display: flex
+				justify-content: space-evelyn
+				position: relative
+				margin-bottom: 0.5rem
+				a
+					font-size: 1rem
+					padding: 0.3rem 1rem
+					border: 3px solid #fff
+					width: 50%
+					text-align: center
+					transition: all 0.2s ease
+					&:hover
+						background-color: #fff
+						color: $primary-background
+					&:first-of-type
+						border-right: none
+		.entry__title-container
+			h2
+				font-size: 1.4rem
+				font-weight: 600
+				margin-bottom: 0.25rem
+				text-transform: uppercase
+		.entry__about-text
+			font-size: 1rem
+			line-height: 1.4rem
+			font-weight: 300
+			color: #fff
+		.entry__tools-container
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding-left: 1rem
+			padding: 1rem
+
+
+			// **************END-PORTFOLIO************** // 
 			// **************END-WRAPPER************** // 
