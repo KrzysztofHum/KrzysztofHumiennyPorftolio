@@ -27,10 +27,12 @@ li
 		&:hover
 			opacity:0.8
 
-
 .icon-style
-	color: #434343
+	font-size: 2rem
+	padding: 0 1rem
 
+.small-icon-style
+	color: #434343
 
 .page
 	background-color: $primary-background
@@ -120,3 +122,32 @@ li
 			content: "krzysztof.humienny1996@wp.pl"
 
 			// **************END-TOP-NAV************** // 
+
+			// **************SIDE-NAV************** // 
+.side-nav
+	display: flex
+	position: fixed
+	bottom: 0
+	background-color: $primary-background
+	height: 4rem
+	width: 100%
+	justify-content: center
+	align-items: center
+	box-shadow: 0 0 2rem black
+	z-index: 999
+	border-top: 1px solid #434343
+	ul
+		display: flex
+		justify-content: space-between
+		li
+			display: list-item
+			&:first-of-type
+				border-right: 1px solid #434343
+			// **************END-SIDE-NAV************** // 
+
+			// **************WRAPPER************** // 
+
+
+
+				
+			// **************END-WRAPPER************** // 

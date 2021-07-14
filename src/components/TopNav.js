@@ -26,7 +26,7 @@ export default function TopNav() {
             rel="noopener"
             target="_blank"
           >
-            <FaDownload className="icon-style" />
+            <FaDownload className="small-icon-style" />
             <span> </span>CV
           </a>
         </li>
