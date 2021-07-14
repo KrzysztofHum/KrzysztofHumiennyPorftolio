@@ -22,10 +22,13 @@ body
 li
 	list-style-type: none
 	a
-		text-decoration: none
-		color: inherit
 		&:hover
 			opacity:0.8
+
+a	
+	text-decoration: none
+	color: inherit
+
 
 .icon-style
 	font-size: 2rem
@@ -146,8 +149,49 @@ li
 			// **************END-SIDE-NAV************** // 
 
 			// **************WRAPPER************** // 
+.wrapper
+	padding: 1rem
+	.heading-text-container
+		max-width: 40rem
+		overflow: hidden
+		h2
+			line-height: 1
+			font-weight: 600
+			text-transform: uppercase
+			font-size: 3rem
+			overflow: hidden
+		.heading-line
+			margin: 1rem 0
+			display: block
+			width: 75%
+			height: 3px
+			background-color: #fff
+		.read-more__link
+			text-align: center
+			font-size: 1rem
+			cursor: pointer
+			width: 9rem
+			border: 2px solid #fff
+			padding: 0.3rem 1rem
+			transition: all 0.2s ease
+			&:hover
+				background-color: #fff
+				color: $primary-background
+		.about
+			height: 0
+			width: auto
+			transition: all 0.5s
+		.about__open
+			height: 53rem
+			transition: all .1s
+			padding-top: 1rem
+			.about__about-text
+				margin-bottom: 1rem
+				line-height: 1.4rem
+				font-weight: 300
+				a
+					font-weight: bold
+					transition: all 0.2s
 
 
-
-				
 			// **************END-WRAPPER************** // 
