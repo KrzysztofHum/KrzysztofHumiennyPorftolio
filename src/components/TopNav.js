@@ -5,7 +5,7 @@ export default function TopNav() {
   const [show, setShow] = useState(false)
   return (
     <div className="top-nav">
-      <div className="logo-container"></div>
+      <div className="logo-container">KH</div>
       <div className="menu-list__icon-container">
         <button
           className={show ? "hamburger-active" : ""}

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   SiJavascript,
   SiReact,
@@ -7,12 +8,16 @@ import {
 } from "react-icons/si"
 
 export default function Portfolio() {
-	return (
+  return (
     <div className="portfolio">
       <div className="portfolio__entry">
         <div className="entry__img-container">
-          <div className="shown-img"></div>
-          <div className="hover-img"></div>
+          <div className="shown-img">
+            <StaticImage
+              src="../assets/images/FitPrzepisy1.png"
+              layout="fullWidth"
+            />
+          </div>
         </div>
         <div className="entry__right-container">
           <div className="entry__link-container">
@@ -53,8 +58,12 @@ export default function Portfolio() {
       </div>
       <div className="portfolio__entry">
         <div className="entry__img-container">
-          <div className="shown-img"></div>
-          <div className="hover-img"></div>
+          <div className="shown-img">
+            <StaticImage
+              src="../assets/images/GsmWorld.png"
+              layout="fullWidth"
+            />
+          </div>
         </div>
         <div className="entry__right-container">
           <div className="entry__link-container">
@@ -95,8 +104,9 @@ export default function Portfolio() {
       </div>
       <div className="portfolio__entry">
         <div className="entry__img-container">
-          <div className="shown-img"></div>
-          <div className="hover-img"></div>
+          <div className="shown-img">
+            <StaticImage src="../assets/images/ryzwarzywa.jpg" />
+          </div>
         </div>
         <div className="entry__right-container">
           <div className="entry__link-container">

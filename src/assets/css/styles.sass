@@ -1,5 +1,5 @@
 $font-stack:  Poppins, sans-serif
-
+$breakpoint-pc: 800px
 $primary-background: #191919
 
 %pseudo-block
@@ -10,6 +10,8 @@ $primary-background: #191919
 	position: absolute
 	left: 0
 
+* 
+	margin: 0
 
 
 
@@ -19,12 +21,15 @@ body
 	font-weight: normal
 	font-size: 16px
 
+	@media (min-width: 1300px)
+		font-size: 22px
+
 li
 	list-style-type: none
 	a
 		&:hover
+			border-bottom: .3rem solid white
 			opacity:0.8
-
 a	
 	text-decoration: none
 	color: inherit
@@ -53,12 +58,33 @@ a
 	align-items: flex-end
 	flex-direction: column
 	padding: 1rem 1rem 0
+	@media (min-width: $breakpoint-pc)
+		justify-content: flex-start
+		position: fixed
+		flex-direction: row
+		border-bottom: 1px solid #434343
+		height: 4rem
+		background-color: $primary-background
+		width: 100%
+		z-index: 999
+		padding: 0
+		box-shadow: 0 0 1.6rem rgb(0 0 0 / 70% )
 
 .logo-container
 	display: none
+	@media (min-width: 800px)
+		height: 4rem
+		width: 4.3rem
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 1.8rem
+		font-weight: 900
 
 .menu-list__icon-container 
 	cursor: pointer
+	@media (min-width: 800px)
+		display: none
 
 	// **************HAMBURGER-MENU************** // 
 	button
@@ -104,21 +130,49 @@ a
 					transform: translateY(0px) rotate(45deg)
 				&:after
 					transform: translateY(0px) rotate(-45deg)
-			
+
+.sr-only
+	border:0
+	clip: rect(0,0,0,0)
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+	white-space: nowrap
+	width: 1px
+				
 // **************END-HAMBURGER-MENU************** // 
 .menu-list
 	height: 0
 	width: 100%
 	overflow: hidden
 	transition: all 0.5s
+	@media (min-width: $breakpoint-pc)
+		display: flex
+		height: 100%
+		opacity: 1
 	li
 		border-bottom: 2px solid #fff
 		padding: 0.5rem 0
 		text-align: center
+		@media (min-width: $breakpoint-pc)
+			position: relative
+			border-right: 1px solid #434343
+			overflow: hidden
+			display: flex
+			align-items: stretch
+			border-bottom: none
+			padding: 0
 		a
 			text-transform: uppercase
 			font-weight: 300
 			transition: all 0.5s
+			@media (min-width: $breakpoint-pc)
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 0 1rem
 
 .show-links
 	height: 5.2rem
@@ -127,9 +181,14 @@ a
 .contact-li
 	display: flex
 	justify-content: center
+	transition: all 2s
+	&:hover
+		a
+			&:after
+				content: "krzysztof.humienny1996@wp.pl"
 	a
 		&:after
-			content: "krzysztof.humienny1996@wp.pl"
+			content: "contact"
 
 			// **************END-TOP-NAV************** // 
 
@@ -204,25 +263,33 @@ a
 			// **************PORTFOLIO************** // 
 .portfolio
 	padding: 1rem 0
+	@media ( min-width: 800px )
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between		
 	.portfolio__entry
 		margin-bottom: 2rem
 		border-bottom: 1px solid #434343
+		@media (min-width: 800px)
+			display: flex
+			flex-direction: column
+			width: 49.2%
 		.entry__img-container
 			margin-bottom: 0rem
 			border: 3px solid #fff
 			border-bottom: none
 			position: relative
-			overflow: hidden
-			.hover-img
-				position: absolute
-				top: 100%
-				transition: all 0.5s
 		.entry__right-container
+			@media (min-width: 800px)
+				display: flex
+				flex-flow: row wrap
 			.entry__link-container
 				display: flex
 				justify-content: space-evelyn
 				position: relative
 				margin-bottom: 0.5rem
+				@media (min-width: 800px)
+					width: 100%
 				a
 					font-size: 1rem
 					padding: 0.3rem 1rem
@@ -246,13 +313,19 @@ a
 			line-height: 1.4rem
 			font-weight: 300
 			color: #fff
+			@media (min-width: 800px)
+				width: 80%
 		.entry__tools-container
 			display: flex
 			align-items: center
 			justify-content: space-between
 			padding-left: 1rem
 			padding: 1rem
-
+			@media (min-width: 800px)
+				width: 20%
+				justify-content: space-evenly
+				padding: 0
+				flex-direction: column
 
 			// **************END-PORTFOLIO************** // 
 			// **************END-WRAPPER************** // 
