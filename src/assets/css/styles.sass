@@ -10,16 +10,19 @@ $primary-background: #191919
 	position: absolute
 	left: 0
 
-* 
+*, *:before, *:after
+	box-sizing: inherit
 	margin: 0
-
-
+*
+	@media (min-width: 1300px)
+		font-size: 22px
 
 body 
 	font-family: $font-stack
 	line-height: 1.4
 	font-weight: normal
 	font-size: 16px
+	padding: 0
 
 	@media (min-width: 1300px)
 		font-size: 22px
@@ -28,12 +31,16 @@ li
 	list-style-type: none
 	a
 		&:hover
-			border-bottom: .3rem solid white
 			opacity:0.8
 a	
 	text-decoration: none
 	color: inherit
 
+ul
+	padding: 0px
+
+h3
+	padding: 1rem
 
 .icon-style
 	font-size: 2rem
@@ -94,6 +101,7 @@ a
 		border: 0
 		margin: 0
 		transition: transform .3s .1s ease-in-out
+		cursor: pointer
 		.hamburger-box
 			width: 35px
 			height: 24px
@@ -188,7 +196,7 @@ a
 				content: "krzysztof.humienny1996@wp.pl"
 	a
 		&:after
-			content: "contact"
+			content: "Kontakt"
 
 			// **************END-TOP-NAV************** // 
 
@@ -205,18 +213,49 @@ a
 	box-shadow: 0 0 2rem black
 	z-index: 999
 	border-top: 1px solid #434343
+	@media (min-width: $breakpoint-pc)
+		left: 0
+		height: 100%
+		width: 4rem
+		align-items: flex-end
+		justify-content: center
+		box-shadow: none
+		border-right: 1px solid #434343
+		border-top: none
+		background-color: transparent
 	ul
 		display: flex
 		justify-content: space-between
+		@media (min-width: $breakpoint-pc)
+			flex-direction: column
 		li
 			display: list-item
 			&:first-of-type
 				border-right: 1px solid #434343
+			@media (min-width: $breakpoint-pc)
+				display: flex
+				padding: 1rem 0
+				align-items: center
+				justify-content: center
+				width: 4rem
+				border-top: 1px solid #434343
+				&:hover
+					padding-bottom: 13px
+					border-bottom: 3px solid white
+			@media (min-width: 1300px)
+				&:hover
+					padding-bottom: 19px
+					border-bottom: 3px solid white
 			// **************END-SIDE-NAV************** // 
 
 			// **************WRAPPER************** // 
 .wrapper
 	padding: 1rem
+	@media (min-width: $breakpoint-pc)
+		padding: 5rem 1rem 1rem 5rem
+	@media (min-width: 1300px)
+		max-width: 80vw
+
 	.heading-text-container
 		max-width: 40rem
 		overflow: hidden
@@ -247,10 +286,6 @@ a
 		.about
 			height: 0
 			transition: all 0.5s
-		.about__open
-			height: 53rem
-			transition: all .5s
-			padding-top: 1rem
 			.about__about-text
 				margin-bottom: 1rem
 				line-height: 1.4rem
@@ -258,6 +293,25 @@ a
 				a
 					font-weight: bold
 					transition: all 0.5s
+			.about-stack
+				margin: 1rem 0
+				span
+					margin-top: .5rem
+					display: inline-block
+					background: #617d98
+					color: white
+					margin-right: 0.5rem
+					padding: .25rem .5rem
+					border-radius: .25rem
+					text-transform: uppercase
+					letter-spacing: 2px
+		.about__open
+			height: 38rem
+			transition: all .5s
+			padding-top: 1rem
+			@media ( min-width: 560px  )
+				height: 25rem
+				
 
 
 			// **************PORTFOLIO************** // 

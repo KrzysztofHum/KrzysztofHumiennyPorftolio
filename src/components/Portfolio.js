@@ -26,7 +26,7 @@ export default function Portfolio() {
               rel="noopener"
               target="_blank"
               className="entry-link__see-live"
-              href="#"
+              href="https://fit-przepisy.netlify.app"
             >
               See Live
             </a>
@@ -35,7 +35,7 @@ export default function Portfolio() {
               rel="noopener"
               target="_blank"
               className="entry-link__view-live"
-              href="#"
+              href="https://github.com/KrzysztofHum/fit-przepisy"
             >
               View Code
             </a>
@@ -44,9 +44,20 @@ export default function Portfolio() {
             <h2>Fit Przepisy</h2>
           </div>
           <p className="entry__about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            eligendi, iusto cupiditate ea minus nihil fugiat nisi! Quibusdam,
-            adipisci sit?
+            W pełni responsywny blog kulinarny napisany w GatsbyJs, połączony z
+            headless CMS jakim jest Contentful. Blog stał się projektem
+            komeprcyjnym, na którym dzielę się swoja pasją do zdrowego żywienia.
+            Projekt wraz z moją nauką, będzie ciągle rozwijany.
+            <br />
+            <br />
+            W projecie użyłem:
+            <br />
+            - Gatsby umożliwił stworzenie szybkiej, bezpiecznej i wydajnej
+            strony przy użyciu platformy React.
+            <br />
+            - Contentful jako headless CMS jest używany do zarządzanie treścą
+            <br />- StyledComponents ułatwily mi stylowanie projektu, dzięki
+            czemu jest czytelniejszy.
           </p>
           <div className="entry__tools-container">
             <SiJavascript className="icon-style" />
@@ -72,7 +83,7 @@ export default function Portfolio() {
               rel="noopener"
               target="_blank"
               className="entry-link__see-live"
-              href="#"
+              href="https://gsm-world.herokuapp.com/"
             >
               See Live
             </a>
@@ -81,7 +92,7 @@ export default function Portfolio() {
               rel="noopener"
               target="_blank"
               className="entry-link__view-live"
-              href="#"
+              href="https://github.com/KrzysztofHum/GSM-World"
             >
               View Code
             </a>
@@ -124,13 +135,13 @@ export default function Portfolio() {
               rel="noopener"
               target="_blank"
               className="entry-link__view-live"
-              href="#"
+              href="https://github.com/KrzysztofHum/KrzysztofHumiennyPorftolio"
             >
               View Code
             </a>
           </div>
           <div className="entry__title-container">
-            <h2>Fit Przepisy</h2>
+            <h2>Portfolio</h2>
           </div>
           <p className="entry__about-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
