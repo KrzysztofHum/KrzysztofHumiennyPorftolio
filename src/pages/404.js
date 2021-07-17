@@ -1,12 +1,9 @@
-import React from "react"
+import React from 'react'
 
-const Error = () => {
-  <main>
-    <section>
-      <h1>404</h1>
-      <h3>Stronie nie znaleziona</h3>
-    </section>
-  </main>
+export default function Error() {
+	return (
+		<div>
+			Strony nie znaleziono
+		</div>
+	)
 }
-
-export default Error
