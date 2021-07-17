@@ -12,9 +12,9 @@ export default function TopNav() {
           aria-expanded={show}
           onClick={() => setShow(!show)}
         >
-          <span class="sr-only">Open/Close menu</span>
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
+          <span className="sr-only">Open/Close menu</span>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
           </span>
         </button>
       </div>
@@ -22,8 +22,8 @@ export default function TopNav() {
         <li className="cv-li">
           <a
             aria-label="CV on Google Drive"
-            href="#"
-            rel="noopener"
+            href="google.pl"
+            rel="noreferrer"
             target="_blank"
           >
             <FaDownload className="small-icon-style" />
@@ -31,7 +31,7 @@ export default function TopNav() {
           </a>
         </li>
         <li className="contact-li">
-          <a aria-label="Link to Email" rel="noopener" href="#"></a>
+          <a aria-label="Link to Email" rel="noreferrer" href="mailto:k.humienny1996@wp.pl" data-hover="k.humienny1996@wp.pl">Kontakt</a>
         </li>
       </ul>
     </div>

@@ -10,6 +10,12 @@ $primary-background: #191919
 	position: absolute
 	left: 0
 
+@mixin flex-center
+	display: flex
+	align-items: center
+	justify-content: center
+	
+
 *, *:before, *:after
 	box-sizing: inherit
 	margin: 0
@@ -82,9 +88,7 @@ h3
 	@media (min-width: 800px)
 		height: 4rem
 		width: 4.3rem
-		display: flex
-		justify-content: center
-		align-items: center
+		@include flex-center	
 		font-size: 1.8rem
 		font-weight: 900
 
@@ -177,9 +181,7 @@ h3
 			font-weight: 300
 			transition: all 0.5s
 			@media (min-width: $breakpoint-pc)
-				display: flex
-				justify-content: center
-				align-items: center
+				@include flex-center
 				padding: 0 1rem
 
 .show-links
@@ -190,26 +192,26 @@ h3
 	display: flex
 	justify-content: center
 	transition: all 2s
-	&:hover
-		a
-			&:after
-				content: "krzysztof.humienny1996@wp.pl"
-	a
-		&:after
-			content: "Kontakt"
+	a 
+		&:hover
+			font-size: 0
+		&:hover::after
+			content: attr(data-hover)
+			font-size: 24px
+			line-height: 28px
+			
+
 
 			// **************END-TOP-NAV************** // 
 
 			// **************SIDE-NAV************** // 
 .side-nav
-	display: flex
+	@include flex-center
 	position: fixed
 	bottom: 0
 	background-color: $primary-background
 	height: 4rem
 	width: 100%
-	justify-content: center
-	align-items: center
 	box-shadow: 0 0 2rem black
 	z-index: 999
 	border-top: 1px solid #434343
@@ -233,10 +235,8 @@ h3
 			&:first-of-type
 				border-right: 1px solid #434343
 			@media (min-width: $breakpoint-pc)
-				display: flex
+				@include flex-center
 				padding: 1rem 0
-				align-items: center
-				justify-content: center
 				width: 4rem
 				border-top: 1px solid #434343
 				&:hover
@@ -272,6 +272,8 @@ h3
 			height: 3px
 			background-color: #fff
 		.read-more__link
+			background-color: #191919
+			color: #fff
 			text-align: center
 			font-size: 1rem
 			cursor: pointer

@@ -9,9 +9,9 @@ export default function Wrapper() {
         <h2 className="heading-text1">Krzysztof Humienny</h2>
         <h2 className="heading-text2">Front end Developer</h2>
         <div className="heading-line"></div>
-        <a className="read-more__link" onClick={() => setShow(!show)}>
+        <button className="read-more__link" onClick={() => setShow(!show)}>
           {show ? "Więcej w CV" : "O mnie"}
-        </a>
+        </button>
         <section className={show ? "about about__open" : "about"}>
           <h3>Programowanie to moje hobby</h3>
           <p className="about__about-text">
@@ -42,7 +42,7 @@ export default function Wrapper() {
               aria-label="CV on Google Drive"
               rel="noopener"
               target="_blank"
-              href="#"
+              href="googlecv.pl"
             >
               CV.
             </a>

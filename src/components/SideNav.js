@@ -8,7 +8,7 @@ export default function SideNav() {
         <li>
           <a
             aria-label="Linkedin"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/kris-harington-39b88b205/"
           >
@@ -18,7 +18,7 @@ export default function SideNav() {
         <li>
           <a
             aria-label="GitHub"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://github.com/KrzysztofHum"
           >
