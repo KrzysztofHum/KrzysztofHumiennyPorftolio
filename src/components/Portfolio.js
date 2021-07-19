@@ -38,7 +38,7 @@ export default function Portfolio() {
               className="entry-link__view-live"
               href="https://github.com/KrzysztofHum/fit-przepisy"
             >
-              Zobacz Code
+              Zobacz Kod
             </a>
           </div>
           <div className="entry__title-container">
@@ -97,7 +97,7 @@ export default function Portfolio() {
               className="entry-link__view-live"
               href="https://github.com/KrzysztofHum/GSM-World"
             >
-              Zobacz Code
+              Zobacz Kod
             </a>
           </div>
           <div className="entry__title-container">
@@ -154,7 +154,7 @@ export default function Portfolio() {
               className="entry-link__view-live"
               href="https://github.com/KrzysztofHum/KrzysztofHumiennyPorftolio"
             >
-              Zobacz Code
+              Zobacz Kod
             </a>
           </div>
           <div className="entry__title-container">
