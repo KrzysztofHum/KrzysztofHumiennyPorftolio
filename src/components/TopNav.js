@@ -22,7 +22,7 @@ export default function TopNav() {
         <li className="cv-li">
           <a
             aria-label="CV on Google Drive"
-            href="google.pl"
+            href="https://drive.google.com/file/d/1_A-dJOLFQVGirVgty4bML0-Q12xo32hI/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >
@@ -31,7 +31,14 @@ export default function TopNav() {
           </a>
         </li>
         <li className="contact-li">
-          <a aria-label="Link to Email" rel="noreferrer" href="mailto:k.humienny1996@wp.pl" data-hover="k.humienny1996@wp.pl">Kontakt</a>
+          <a
+            aria-label="Link to Email"
+            rel="noreferrer"
+            href="mailto:k.humienny1996@wp.pl"
+            data-hover="k.humienny1996@wp.pl"
+          >
+            Kontakt
+          </a>
         </li>
       </ul>
     </div>

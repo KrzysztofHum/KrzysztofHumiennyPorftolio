@@ -42,7 +42,7 @@ export default function Wrapper() {
               aria-label="CV on Google Drive"
               rel="noopener"
               target="_blank"
-              href="googlecv.pl"
+              href="https://drive.google.com/file/d/1_A-dJOLFQVGirVgty4bML0-Q12xo32hI/view?usp=sharing"
             >
               CV.
             </a>
