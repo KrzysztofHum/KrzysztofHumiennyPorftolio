@@ -10,7 +10,7 @@ export default function SideNav() {
             aria-label="Linkedin"
             rel="noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/kris-harington-39b88b205/"
+            href="https://www.linkedin.com/in/krzysztof-humienny-39b88b205/"
           >
             <FaLinkedin className="icon-style" />
           </a>
