@@ -36,7 +36,7 @@ export default function Portfolio() {
               rel="noreferrer"
               target="_blank"
               className="entry-link__view-live"
-              href="https://github.com/KrzysztofHum/fit-przepisy"
+              href="https://github.com/KrzysztofHum/fit-przepisy_v1"
             >
               Zobacz Kod
             </a>
@@ -82,7 +82,7 @@ export default function Portfolio() {
         <div className="entry__right-container">
           <div className="entry__link-container">
             <a
-              aria-label="Fit Przepisy"
+              aria-label="GSM World"
               rel="noreferrer"
               target="_blank"
               className="entry-link__see-live"
@@ -91,7 +91,7 @@ export default function Portfolio() {
               Zobacz Live
             </a>
             <a
-              aria-label="Fit Przepisy"
+              aria-label="GSM World"
               rel="noreferrer"
               target="_blank"
               className="entry-link__view-live"
@@ -143,7 +143,7 @@ export default function Portfolio() {
               rel="noreferrer"
               target="_blank"
               className="entry-link__see-live"
-              href="https://fit-przepisy.netlify.app/"
+              href="https://krzysztofhumienny.netlify.app"
             >
               Zobacz Live
             </a>
