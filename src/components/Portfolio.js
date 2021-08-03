@@ -108,8 +108,8 @@ export default function Portfolio() {
             <h2>Video-App</h2>
           </div>
           <p className="entry__about-text">
-            Aplikacja zapisująca dodane filmy dzięki czemu możemy zrobić własną
-            playliste, napisana w React korzystająca z youtube oraz vimeo API.
+            Aplikacja zapisująca dodane filmy za pośrednictwem linka z youtube/vime, napisana w React korzystająca z youtube oraz vimeo API.
+            
             <br />
             <br />
             W projecie wykorzystałem: <br />
