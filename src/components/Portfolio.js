@@ -14,9 +14,11 @@ export default function Portfolio() {
         <div className="entry__img-container">
           <div className="shown-img">
             <StaticImage
+              width="1200"
+              height="900"
               alt="FitPrzepisy"
               src="../assets/images/FitPrzepisy1.png"
-              layout="fullWidth"
+              layout="constrained"
             />
           </div>
         </div>
@@ -73,8 +75,10 @@ export default function Portfolio() {
         <div className="entry__img-container">
           <div className="shown-img">
             <StaticImage
+              width="1200"
+              height="900"
               src="../assets/images/VideoApp.png"
-              layout="fullWidth"
+              layout="constrained"
               alt="VideoApp"
             />
           </div>
@@ -129,8 +133,10 @@ export default function Portfolio() {
         <div className="entry__img-container">
           <div className="shown-img">
             <StaticImage
+              width="1200"
+              height="900"
               src="../assets/images/GsmWorld.png"
-              layout="fullWidth"
+              layout="constrained"
               alt="GsmWorld"
             />
           </div>
@@ -186,7 +192,9 @@ export default function Portfolio() {
         <div className="entry__img-container">
           <div className="shown-img">
             <StaticImage
-              layout="fullWidth"
+              width="1200"
+              height="900"
+              layout="constrained"
               alt="Portfolio"
               src="../assets/images/Portfolio1.png"
             />
