@@ -17,9 +17,9 @@ export default function Wrapper() {
           <p className="about__about-text">
             Od ponad półtora roku uczę się programować w JavaScript, uwielbiam
             poznawać nowe technologię oraz rozwiązywać problemy na które się
-            napotykam. Widzę czerpałem z dostępnych w internecie darmowych
+            napotykam. Wiedzę czerpałem głównie z dostępnych w internecie darmowych
             źródeł, aktualnie najczęściej korzystam z dokumentacji oraz
-            stackoverflow.
+            stackoverflow. Jestem w trakcie poznawania oraz wdrazania w projekty Typescript.
           </p>
           <p className="about__about-text">
             Miałem okazje wykonywać projekty korzystając z takich technologii
@@ -29,10 +29,12 @@ export default function Wrapper() {
             <span>JavaScript</span>
             <span>React.Js</span>
             <span>Gatsby.js</span>
+            <span>GraphQL</span>
             <span>Node.js</span>
             <span>Express.js</span>
             <span>Mongodb</span>
             <span>StyledComponent</span>
+            <span>Bootstrap</span>
             <span>Git</span>
           </div>
           <p className="about__about-text">
