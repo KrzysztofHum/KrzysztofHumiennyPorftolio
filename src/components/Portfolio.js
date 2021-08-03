@@ -117,9 +117,13 @@ export default function Portfolio() {
             <br />
             - React Redux do zarządzania stanem w React.
             <br />- API z youtube oraz vimeo do wczytywania danych.
-            <br />- Możliwość wczytania bazy filmów.
+            <br />
+            <br />
+            Funkcjonalność: <br />
+            - Możliwość wczytania bazy filmów.
             <br /> - Możliwość dodania filmu do ulubionych. <br />- Sortowanie,
             filtrowanie, usuwanie filmów.
+            <br /> - Włączenie filmu w modalu
           </p>
           <div className="entry__tools-container">
             <SiJavascript className="icon-style" />
@@ -175,10 +179,12 @@ export default function Portfolio() {
             <br />
             - React Redux do zarządzania stanem w React.
             <br />- System logowania, tworzenia kont oparty na tokenach.
-            <br /> - Możliwość korzystania z panelu admina wykonując takie
-            czynności jak usuwanie, dodawanie, edytowanie przedmiotów oraz
-            użytkowników. <br />- Wyszukiwanie, sortowanie, filtrowanie
-            przedmiotów.
+            <br />
+            <br />
+            Funkcjonalność: <br />
+            - Możliwość korzystania z panelu admina wykonując takie czynności
+            jak usuwanie, dodawanie, edytowanie przedmiotów oraz użytkowników.{" "}
+            <br />- Wyszukiwanie, sortowanie, filtrowanie przedmiotów.
           </p>
           <div className="entry__tools-container">
             <SiJavascript className="icon-style" />
