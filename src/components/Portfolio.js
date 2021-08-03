@@ -73,6 +73,62 @@ export default function Portfolio() {
         <div className="entry__img-container">
           <div className="shown-img">
             <StaticImage
+              src="../assets/images/VideoApp.png"
+              layout="fullWidth"
+              alt="VideoApp"
+            />
+          </div>
+        </div>
+        <div className="entry__right-container">
+          <div className="entry__link-container">
+            <a
+              aria-label="Video App"
+              rel="noreferrer"
+              target="_blank"
+              className="entry-link__see-live"
+              href="https://video-generator.netlify.app"
+            >
+              Zobacz Live
+            </a>
+            <a
+              aria-label="GSM World"
+              rel="noreferrer"
+              target="_blank"
+              className="entry-link__view-live"
+              href="https://github.com/KrzysztofHum/Videoapp"
+            >
+              Zobacz Kod
+            </a>
+          </div>
+          <div className="entry__title-container">
+            <h2>Video-App</h2>
+          </div>
+          <p className="entry__about-text">
+            Aplikacja zapisująca dodane filmy dzięki czemu możemy zrobić własną
+            playliste, napisana w React korzystająca z youtube oraz vimeo API.
+            <br />
+            <br />
+            W projecie wykorzystałem: <br />
+            - React, reactstrap, bootstrap.
+            <br />
+            - React Redux do zarządzania stanem w React.
+            <br />- API z youtube oraz vimeo do wczytywania danych.
+            <br />- Możliwość wczytania bazy filmów.
+            <br /> - Możliwość dodania filmu do ulubionych. <br />- Sortowanie,
+            filtrowanie, usuwanie filmów.
+          </p>
+          <div className="entry__tools-container">
+            <SiJavascript className="icon-style" />
+            <SiReact className="icon-style" />
+            <SiGatsby className="icon-style" />
+            <SiStyledComponents className="icon-style" />
+          </div>
+        </div>
+      </div>
+      <div className="portfolio__entry">
+        <div className="entry__img-container">
+          <div className="shown-img">
+            <StaticImage
               src="../assets/images/GsmWorld.png"
               layout="fullWidth"
               alt="GsmWorld"
