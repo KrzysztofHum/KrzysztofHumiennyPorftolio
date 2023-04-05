@@ -22,7 +22,7 @@ export default function TopNav() {
         <li className="cv-li">
           <a
             aria-label="CV on Google Drive"
-            href="https://drive.google.com/file/d/1_A-dJOLFQVGirVgty4bML0-Q12xo32hI/view?usp=sharing"
+            href="https://drive.google.com/file/d/1_ou2-A9fHTPgDHdtHYnSWFEonAwtl-wu/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >

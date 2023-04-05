@@ -17,9 +17,10 @@ export default function Wrapper() {
           <p className="about__about-text">
             Od ponad półtora roku uczę się programować w JavaScript, uwielbiam
             poznawać nowe technologię oraz rozwiązywać problemy na które się
-            napotykam. Wiedzę czerpałem głównie z dostępnych w internecie darmowych
-            źródeł, aktualnie najczęściej korzystam z dokumentacji oraz
-            stackoverflow. Jestem w trakcie poznawania oraz wdrazania w projekty Typescript.
+            napotykam. Wiedzę czerpałem głównie z dostępnych w internecie
+            darmowych źródeł, aktualnie najczęściej korzystam z dokumentacji
+            oraz stackoverflow. Jestem w trakcie poznawania oraz wdrazania w
+            projekty Typescript.
           </p>
           <p className="about__about-text">
             Miałem okazje wykonywać projekty korzystając z takich technologii
@@ -42,9 +43,9 @@ export default function Wrapper() {
             skontaktować, wszystkie moje dane są dostępne w moim &nbsp;
             <a
               aria-label="CV on Google Drive"
-              rel="noopener"
               target="_blank"
-              href="https://drive.google.com/file/d/1_A-dJOLFQVGirVgty4bML0-Q12xo32hI/view?usp=sharing"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1_ou2-A9fHTPgDHdtHYnSWFEonAwtl-wu/view?usp=sharing"
             >
               CV.
             </a>

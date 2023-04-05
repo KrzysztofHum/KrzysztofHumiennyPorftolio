@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import {
   SiJavascript,
   SiReact,
-  SiStyledComponents,
+  SiStyledcomponents,
   SiGatsby,
 } from "react-icons/si"
 
@@ -67,7 +67,68 @@ export default function Portfolio() {
             <SiJavascript className="icon-style" />
             <SiReact className="icon-style" />
             <SiGatsby className="icon-style" />
-            <SiStyledComponents className="icon-style" />
+            <SiStyledcomponents className="icon-style" />
+          </div>
+        </div>
+      </div>
+      <div className="portfolio__entry">
+        <div className="entry__img-container">
+          <div className="shown-img">
+            <StaticImage
+              width="1200"
+              height="900"
+              src="../assets/images/mediakingImg.png"
+              layout="constrained"
+              alt="mediaKing"
+            />
+          </div>
+        </div>
+        <div className="entry__right-container">
+          <div className="entry__link-container">
+            <a
+              aria-label="Media King"
+              rel="noreferrer"
+              target="_blank"
+              className="entry-link__see-live"
+              href="https://media-king-web.onrender.com/"
+            >
+              Zobacz Live
+            </a>
+            <a
+              aria-label="Media King"
+              rel="noreferrer"
+              target="_blank"
+              className="entry-link__view-live"
+              href="https://github.com/KrzysztofHum/mediaking"
+            >
+              Zobacz Kod
+            </a>
+          </div>
+          <div className="entry__title-container">
+            <h2>Media-King</h2>
+          </div>
+          <p className="entry__about-text">
+            Ciągle rozwijany sklep internetowy z panelem Admina. Frontend jest
+            napisany za pomocą React.js, natomiast backend -node, express.js
+            oraz bazy danych mongoDB.
+            <br />
+            <br />
+            W projecie wykorzystałem: <br />
+            - React Hook's, bootstrap, formik, yup.
+            <br />
+            - React Redux do zarządzania stanem w React.
+            <br />- System logowania, tworzenia kont z zastosowaniem tokenów.
+            <br />
+            <br />
+            Funkcjonalność: <br />- Możliwość korzystania z panelu admina w celu
+            dodania nowego przedmiotu do sklepu. <br />- Częściowo dalsze plany
+            projektowe są zapisane na github - issues
+          </p>
+          <div className="entry__tools-container">
+            <SiJavascript className="icon-style" />
+            <SiReact className="icon-style" />
+            <SiGatsby className="icon-style" />
+            <SiStyledcomponents className="icon-style" />
           </div>
         </div>
       </div>
@@ -108,8 +169,9 @@ export default function Portfolio() {
             <h2>Video-App</h2>
           </div>
           <p className="entry__about-text">
-            Aplikacja zapisująca dodane filmy za pośrednictwem linka z youtube/vime, napisana w React korzystająca z youtube oraz vimeo API.
-            
+            Aplikacja zapisująca dodane filmy za pośrednictwem linka z
+            youtube/vimeo, napisana w React korzystająca z youtube oraz vimeo
+            API.
             <br />
             <br />
             W projecie wykorzystałem: <br />
@@ -129,68 +191,7 @@ export default function Portfolio() {
             <SiJavascript className="icon-style" />
             <SiReact className="icon-style" />
             <SiGatsby className="icon-style" />
-            <SiStyledComponents className="icon-style" />
-          </div>
-        </div>
-      </div>
-      <div className="portfolio__entry">
-        <div className="entry__img-container">
-          <div className="shown-img">
-            <StaticImage
-              width="1200"
-              height="900"
-              src="../assets/images/GsmWorld.png"
-              layout="constrained"
-              alt="GsmWorld"
-            />
-          </div>
-        </div>
-        <div className="entry__right-container">
-          <div className="entry__link-container">
-            <a
-              aria-label="GSM World"
-              rel="noreferrer"
-              target="_blank"
-              className="entry-link__see-live"
-              href="https://gsm-world.herokuapp.com/"
-            >
-              Zobacz Live
-            </a>
-            <a
-              aria-label="GSM World"
-              rel="noreferrer"
-              target="_blank"
-              className="entry-link__view-live"
-              href="https://github.com/KrzysztofHum/GSM-World"
-            >
-              Zobacz Kod
-            </a>
-          </div>
-          <div className="entry__title-container">
-            <h2>GSM-World</h2>
-          </div>
-          <p className="entry__about-text">
-            W pełni responsywny sklep internetowy napisany w React.js. Backend
-            jest napisany w node.js za pomoca express.js, korzysta z mongoDB.
-            <br />
-            <br />
-            W projecie wykorzystałem: <br />
-            - Hooki, takie jak useEffect, useState.
-            <br />
-            - React Redux do zarządzania stanem w React.
-            <br />- System logowania, tworzenia kont oparty na tokenach.
-            <br />
-            <br />
-            Funkcjonalność: <br />
-            - Możliwość korzystania z panelu admina wykonując takie czynności
-            jak usuwanie, dodawanie, edytowanie przedmiotów oraz użytkowników.{" "}
-            <br />- Wyszukiwanie, sortowanie, filtrowanie przedmiotów.
-          </p>
-          <div className="entry__tools-container">
-            <SiJavascript className="icon-style" />
-            <SiReact className="icon-style" />
-            <SiGatsby className="icon-style" />
-            <SiStyledComponents className="icon-style" />
+            <SiStyledcomponents className="icon-style" />
           </div>
         </div>
       </div>
@@ -247,7 +248,7 @@ export default function Portfolio() {
             <SiJavascript className="icon-style" />
             <SiReact className="icon-style" />
             <SiGatsby className="icon-style" />
-            <SiStyledComponents className="icon-style" />
+            <SiStyledcomponents className="icon-style" />
           </div>
         </div>
       </div>
